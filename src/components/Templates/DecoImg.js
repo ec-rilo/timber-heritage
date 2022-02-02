@@ -26,10 +26,6 @@ const DecorativeImg = ({ className, src }) => {
 
 const StyledDecorativeImg = styled(DecorativeImg)`
   position: absolute;
-  align-items: flex-start;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
   height: ${imgSizeHeight}px;
   width: ${imgSizeWidth}px;
 
