@@ -9,7 +9,8 @@ const TemplateHead = ({ className, text }) => {
 };
 
 const StyledTemplateHead = styled(TemplateHead)`
-  font-size: 3rem;
+  font-size: 2.5rem;
+  font-family: var(--fnt-bold);
 `
 
 export default StyledTemplateHead;
