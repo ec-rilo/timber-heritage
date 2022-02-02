@@ -43,6 +43,7 @@ const StyledTextContainer = styled(TextContainer)`
   flex-direction: column;
   gap: 20px;
   line-height: 1.5;
+  font-size: 1rem;
 `;
 
 const Container1 = ({ className }) => {
