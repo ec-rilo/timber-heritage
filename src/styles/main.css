@@ -1,0 +1,42 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url('../assets/fonts/Roboto/Roboto-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto-Black';
+  src: url('../assets/fonts/Roboto/Roboto-Black.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('../assets/fonts/Roboto/Roboto-Regular.ttf');
+}
+
+:root {
+  /* Colors */
+  --clr-dust: #AD9E72;
+  --clr-cultured: #F6F4F5;
+  --clr-baltic-sea: #292929;
+  --clr-cloud: #c4c4c4;
+  --clr-cloud-light: rgba(196, 196, 196, 0.2);
+  --clr-dark-blue-grey: #2B3954;
+
+  /* Fonts */
+  --fnt-bold: 'Roboto-Bold';
+  --fnt-black: 'Roboto-Black';
+  --fnt-regular: 'Roboto-Regular';
+}
+
+.image-gallery-slide-wrapper {
+  max-height: 500px;
+}
+
+.image-gallery-image {
+  max-width: 1300px;
+  object-fit: cover !important;
+  max-height: 500px !important;
+}
