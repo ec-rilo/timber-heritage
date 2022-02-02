@@ -30,11 +30,11 @@ const StyledContainer2 = styled(Container2)`
 
 const TextContainer = ({ className, text }) => {
   return (
-    <div className={className}>
+    <article className={className}>
       {text.map((paraText, index) => {
         return <p key={index}>{paraText}</p>
       })}
-    </div>
+    </article>
   );
 };
 

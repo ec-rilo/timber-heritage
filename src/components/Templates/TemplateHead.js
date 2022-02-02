@@ -2,9 +2,7 @@ import styled from 'styled-components';
 
 const TemplateHead = ({ className, text }) => {
   return (
-    <div className={className}>
-      <p>{text}</p>
-    </div>
+    <h2 className={className}>{text}</h2>
   );
 };
 
