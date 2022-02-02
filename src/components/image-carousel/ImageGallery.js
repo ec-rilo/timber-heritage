@@ -27,6 +27,7 @@ const ImgGallery = () => {
   return (
     <ImageGallery
       items={images}
+      lazyLoad={true}
       showBullets
       showPlayButton={false}
       showFullscreenButton={false}
