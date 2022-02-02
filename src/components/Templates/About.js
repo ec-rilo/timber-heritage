@@ -3,8 +3,8 @@ import device from '../../assets/devices';
 import StyledTemplateTitle from './TemplateTitle';
 import StyledTemplateHead from './TemplateHead';
 import StyledBtn from './Button';
-import woodSrc from './timber.jpeg';
-import trainSrc from './train.JPG';
+import woodSrc from './timber.webp';
+import trainSrc from './train.webp';
 import StyledDecoImgContainer from './DecoImg';
 
 
