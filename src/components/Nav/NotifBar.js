@@ -18,5 +18,11 @@ const StyledNotifBar = styled(NotifBar)`
   font-size: .9rem;
   background-color: var(--clr-baltic-sea);
   color: var(--clr-cultured);
+
+  & > p {
+    height: 100%;
+    cursor: pointer;
+    width: 500px;
+  }
 `
 export default StyledNotifBar;
