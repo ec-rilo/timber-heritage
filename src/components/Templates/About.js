@@ -24,6 +24,8 @@ const StyledContainer2 = styled(Container2)`
   align-items: center;
   gap: 30px;
   flex: 1;
+  overflow: hidden;
+  min-height: 400px;
 `;
 
 const TextContainer = ({ className, text }) => {
@@ -81,7 +83,7 @@ const StyledAbout = styled(About)`
 
   @media ${device.laptop} {
     flex-direction: column;
-    gap: 150px;
+    gap: 100px;
   }
 `
 
