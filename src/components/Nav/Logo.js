@@ -1,5 +1,4 @@
-import styled, { css } from 'styled-components';
-import device from '../../assets/devices';
+import styled from 'styled-components';
 
 const StyledText = styled.p`
   font-family: var(--fnt-black);
