@@ -4,16 +4,19 @@
 @font-face {
   font-family: 'Roboto-Bold';
   src: url('../assets/fonts/Libre_Franklin/static/LibreFranklin-Bold.ttf');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Roboto-Black';
   src: url('../assets/fonts/Roboto/Roboto-Black.ttf');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Roboto-Regular';
   src: url('../assets/fonts/Libre_Franklin/static/LibreFranklin-Regular.ttf');
+  font-display: swap;
 }
 
 :root {
