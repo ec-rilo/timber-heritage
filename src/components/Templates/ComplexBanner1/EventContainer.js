@@ -29,7 +29,7 @@ const StyledUpperContainer = styled(UpperContainer)`
 const MidContainer = ({ className, category, content }) => {
   return (
     <div className={className}>
-      <h4 style={{ color: 'var(--clr-dust)' }}>{category}</h4>
+      <h4 style={{ color: 'var(--clr-dust)', fontFamily: 'var(--fnt-black)' }}>{category}</h4>
       <p>{content}</p>
     </div>
   );
