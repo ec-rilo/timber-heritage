@@ -8,8 +8,9 @@ import StyledNavMenu from './Menu';
 const StyledContainer = styled.div`
   display: flex;
   border-bottom: 1px solid var(--clr-cloud);
-  padding: 20px 20px;
+  padding: 0 20px;
   justify-content: center;
+  height: 60px;
   background-color: var(--clr-cultured);
   ${props =>
     props.dark &&

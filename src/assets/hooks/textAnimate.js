@@ -2,6 +2,8 @@ import { useState } from 'react'
 import styled from 'styled-components';
 
 const TextAnimateLi = styled.li`
+  display: flex;
+  align-items: center;
   color: black;
   transition: color 0.2s;
   cursor: pointer;
