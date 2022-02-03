@@ -1,8 +1,6 @@
-import styled, { css } from 'styled-components';
-import StyledLogo from './Logo';
+import styled from 'styled-components';
 import device from '../../assets/devices';
 import StyledHamBtn from './HamBtn';
-import StyledNotifBar from './NotifBar';
 import StyledNavMenu from './Menu';
 
 const StyledContainer = styled.div`
@@ -12,19 +10,6 @@ const StyledContainer = styled.div`
   justify-content: center;
   height: 60px;
   background-color: var(--clr-cultured);
-  ${props =>
-    props.dark &&
-    css`
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 15px;
-    background-color: var(--clr-dark-blue-grey);
-    color: var(--clr-cultured);
-    align-items: center;
-    height: auto;
-    padding: 35px 0;
-    `};
 `;
 
 const Container = styled.div`
@@ -36,27 +21,11 @@ const Container = styled.div`
   @media ${device.laptop} {
     justify-content: flex-end;
   }
-
-  ${props =>
-    props.hero &&
-    css`
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 15px;
-    `};
 `;
 
 const Nav = ({ className }) => {
   return (
     <nav className={className}>
-      <StyledNotifBar />
-      <StyledContainer dark>
-        <Container hero>
-          <StyledLogo small />
-          <p>Preserve, interpret, and celebrate our timber heritage</p>
-        </Container>
-      </StyledContainer>
       <StyledContainer>
         <Container>
           <StyledHamBtn />
@@ -69,6 +38,8 @@ const Nav = ({ className }) => {
 
 const StyledNav = styled(Nav)`
   z-index: 9999;
+  position: sticky;
+  top: 0;
   @media ${device.laptop} {
     background-color: var(--clr-cultured);
     display: flex;
