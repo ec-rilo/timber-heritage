@@ -20,6 +20,7 @@ const StyledComplexBanner1 = styled(ComplexBanner1)`
   padding: 100px 15px;
   max-width: 1300px;
   margin: auto;
+  overflow: hidden;
 `;
 
 export default StyledComplexBanner1;
