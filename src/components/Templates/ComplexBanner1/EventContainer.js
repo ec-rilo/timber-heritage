@@ -2,9 +2,9 @@ import styled from 'styled-components';
 import { StyledBtn1 } from '../Buttons';
 import device from '../../../assets/devices';
 
-const Img = ({ className, imgSrc }) => {
+const Img = ({ className, imgSrc, alt }) => {
   return (
-    <img className={className} src={imgSrc} alt="#" loading="lazy" />
+    <img className={className} src={imgSrc} alt={alt} loading="lazy" />
   );
 };
 
@@ -14,10 +14,10 @@ const StyledImg = styled(Img)`
   width: 100%;
 `;
 
-const UpperContainer = ({ className, imgSrc }) => {
+const UpperContainer = ({ className, imgSrc, alt }) => {
   return (
     <div className={className}>
-      <StyledImg imgSrc={imgSrc} />
+      <StyledImg imgSrc={imgSrc} alt={alt}/>
     </div>
   );
 };
@@ -103,10 +103,10 @@ const StyledContainer = styled(Container)`
   justify-content: space-between;
 `;
 
-const EventContainer = ({ className, category, content, src, date, time, fadeType }) => {
+const EventContainer = ({ className, category, content, src, alt, date, time, fadeType }) => {
   return (
     <article className={className} data-aos={fadeType}>
-      <StyledUpperContainer imgSrc={src} />
+      <StyledUpperContainer imgSrc={src} alt={alt}/>
       <StyledContainer category={category} content={content} date={date} time={time} />
     </article>
   );

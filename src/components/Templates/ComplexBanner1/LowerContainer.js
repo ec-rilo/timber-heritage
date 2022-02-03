@@ -12,6 +12,7 @@ const LowerContainer = ({ className }) => {
         category='Meeting'
         content="THA Board Meeting - Location: Ming Tree Realty, Eureka or via Zoom."
         src={meetingImg}
+        alt="Leader talking to a group of people during a meeting."
         date="Febuary 23rd"
         time="7:00pm"
         fadeType="fade-down-right"
@@ -20,6 +21,7 @@ const LowerContainer = ({ className }) => {
         category='Conference'
         content="Redwood Region Logging Conference - Ukiah."
         src={timberImg}
+        alt="Many piles of large logs spanning across acres of land."
         date="Febuary 12th"
         time="10:00am"
         fadeType="fade-down-left"
@@ -28,7 +30,8 @@ const LowerContainer = ({ className }) => {
         category='Trolly Rides'
         content="Trolley Rides at Friday Night Market Old Town, Eureka."
         src={trolleyImg}
-        date="Febuary 10rd"
+        alt="THA Member driving a trolley through Eureka, CA."
+        date="Febuary 10th"
         time="6:00pm"
         fadeType="fade-up"
       />
