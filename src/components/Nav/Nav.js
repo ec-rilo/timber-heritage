@@ -47,7 +47,7 @@ const Container = styled.div`
     `};
 `;
 
-const NavMobile = ({ className }) => {
+const Nav = ({ className }) => {
   return (
     <nav className={className}>
       <StyledNotifBar />
@@ -67,25 +67,13 @@ const NavMobile = ({ className }) => {
   );
 };
 
-const StyledNavMobile = styled(NavMobile)`
+const StyledNav = styled(Nav)`
+  z-index: 9999;
   @media ${device.laptop} {
     background-color: var(--clr-cultured);
     display: flex;
     flex-direction: column;
   }
 `;
-
-const Nav = ({ className }) => {
-  return (
-    <div className={className}>
-      <StyledNavMobile />
-    </div>
-  );
-};
-
-const StyledNav = styled(Nav)`
-`;
-
-
 
 export default StyledNav;
