@@ -14,6 +14,7 @@ const LowerContainer = ({ className }) => {
         src={meetingImg}
         date="Febuary 23rd"
         time="7:00pm"
+        fadeType="fade-down-right"
       />
       <EventContainer
         category='Conference'
@@ -21,6 +22,7 @@ const LowerContainer = ({ className }) => {
         src={timberImg}
         date="Febuary 12th"
         time="10:00am"
+        fadeType="fade-down-left"
       />
       <EventContainer
         category='Trolly Rides'
@@ -28,6 +30,7 @@ const LowerContainer = ({ className }) => {
         src={trolleyImg}
         date="Febuary 10rd"
         time="6:00pm"
+        fadeType="fade-up"
       />
     </section>
   );

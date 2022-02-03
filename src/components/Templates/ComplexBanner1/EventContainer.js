@@ -103,9 +103,9 @@ const StyledContainer = styled(Container)`
   justify-content: space-between;
 `;
 
-const EventContainer = ({ className, category, content, src, date, time }) => {
+const EventContainer = ({ className, category, content, src, date, time, fadeType }) => {
   return (
-    <article className={className}>
+    <article className={className} data-aos={fadeType}>
       <StyledUpperContainer imgSrc={src} />
       <StyledContainer category={category} content={content} date={date} time={time} />
     </article>
