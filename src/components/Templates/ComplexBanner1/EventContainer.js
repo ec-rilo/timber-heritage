@@ -32,12 +32,13 @@ const StyledP = styled.p`
   }
 `
 
-const UpperContainer = ({ className, imgSrc, alt }) => {
+const UpperContainer = ({ className, imgSrc, alt, link }) => {
+  console.log(link)
   return (
-    <div className={className}>
+    <a href={link} className={className} target="_blank" rel="noreferrer">
       <StyledP>- Add to calendar - </StyledP>
       <StyledImg imgSrc={imgSrc} alt={alt} />
-    </div>
+    </a>
   );
 };
 
@@ -48,6 +49,7 @@ const StyledUpperContainer = styled(UpperContainer)`
   align-items: center;
   height: 200px;
   cursor: pointer;
+  text-decoration: none;
 
   &:before {
     content: '';
@@ -106,6 +108,11 @@ const StyledContentContainer = styled(ContentContainer)`
   align-items: center;
   gap: 10px;
   color: var(--clr-cultured);
+  flex-wrap: wrap;
+
+  @media ${device.mobileL} {
+    font-size: .9rem;
+  }
 
   @media ${device.mobileM} {
     flex-direction: column;
@@ -145,10 +152,10 @@ const StyledContainer = styled(Container)`
   justify-content: space-between;
 `;
 
-const EventContainer = ({ className, category, content, src, alt, date, time, fadeType }) => {
+const EventContainer = ({ className, category, content, src, alt, date, time, fadeType, link }) => {
   return (
     <article className={className} data-aos={fadeType}>
-      <StyledUpperContainer imgSrc={src} alt={alt} />
+      <StyledUpperContainer imgSrc={src} alt={alt} link={link} />
       <StyledContainer category={category} content={content} date={date} time={time} />
     </article>
   );
