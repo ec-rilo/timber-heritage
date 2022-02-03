@@ -9,21 +9,63 @@ const Img = ({ className, imgSrc, alt }) => {
 };
 
 const StyledImg = styled(Img)`
+  position: absolute;
   object-fit: cover;
   height: 100%;
   width: 100%;
 `;
 
+const StyledP = styled.p`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--clr-cultured);
+  z-index: 2;
+  font-family: var(--fnt-black);
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 1.5rem;
+  &:hover {
+    opacity: 1;
+  }
+`
+
 const UpperContainer = ({ className, imgSrc, alt }) => {
   return (
     <div className={className}>
-      <StyledImg imgSrc={imgSrc} alt={alt}/>
+      <StyledP>- Add to calendar - </StyledP>
+      <StyledImg imgSrc={imgSrc} alt={alt} />
     </div>
   );
 };
 
 const StyledUpperContainer = styled(UpperContainer)`
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 200px;
+  cursor: pointer;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    background-color: black;
+    transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  }
+
+  &:hover:before {
+    background-color: black;
+    opacity: .8;
+  }
 `;
 
 const MidContainer = ({ className, category, content }) => {
@@ -106,7 +148,7 @@ const StyledContainer = styled(Container)`
 const EventContainer = ({ className, category, content, src, alt, date, time, fadeType }) => {
   return (
     <article className={className} data-aos={fadeType}>
-      <StyledUpperContainer imgSrc={src} alt={alt}/>
+      <StyledUpperContainer imgSrc={src} alt={alt} />
       <StyledContainer category={category} content={content} date={date} time={time} />
     </article>
   );
