@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import device from '../../assets/devices';
 
 const Btn1 = ({ className, text }) => {
   return (
@@ -21,6 +22,10 @@ const StyledBtn1 = styled(Btn1)`
   &:hover {
     background-color: var(--clr-cultured);
     color: var(--clr-baltic-sea);
+  }
+
+  @media ${device.mobileL} {
+    padding: 10px 10px;
   }
 `;
 
