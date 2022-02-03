@@ -22,7 +22,8 @@ const StyledContainer = styled.div`
     background-color: var(--clr-dark-blue-grey);
     color: var(--clr-cultured);
     align-items: center;
-    height: 100px;
+    height: auto;
+    padding: 35px 0;
     `};
 `;
 
