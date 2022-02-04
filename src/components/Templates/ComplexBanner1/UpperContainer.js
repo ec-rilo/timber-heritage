@@ -7,8 +7,8 @@ const UpperContainer = ({ className }) => {
   return (
     <div className={className}>
       <TemplateTitle text='Current Events' />
-      <TemplateHead text='February Events' />
-    </div>
+      <TemplateHead >February Events</TemplateHead>
+    </div >
   );
 };
 
