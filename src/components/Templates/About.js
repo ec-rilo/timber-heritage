@@ -50,7 +50,7 @@ const Container1 = ({ className }) => {
   return (
     <div className={className}>
       <StyledTemplateTitle text="About Us" />
-      <StyledTemplateHead text="Timber Heritage Association" />
+      <StyledTemplateHead>Timber Heritage Association</StyledTemplateHead>
       <StyledTextContainer text={['The Timber Heritage Association (THA) is a volunteer based group whose purpose is to create awareness and appreciation for the impact of timber, logging, and railroads on the growth of Humboldt County.', 'To that effort THA is working to create a timber heritage and rail museum and develop a Humboldt Bay excursion train. The combined projects will not only impress on visitors and residents alike the tremendous role the timber industry has played in the history of California and the West, but also create a tourist destination and educational facility for all to enjoy.', 'Please consider helping us obtain (reach) our goals by becoming become a member of THA, signing up to be an active volunteer, or making a purchase from our gift store. Or contact THA to find out other ways you can support the Timber Heritage Association in its efforts to bring a world class museum and tourist train to Humboldt County. We invite you to further explore our website at your leisure.']} />
       <StyledBtn text={'Read More'} />
     </div>
