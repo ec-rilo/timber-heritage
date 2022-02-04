@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import volunteersImg from './volunteers.jpg';
-import device from '../../../assets/devices';
 
 const Img = ({ className }) => {
   return (
