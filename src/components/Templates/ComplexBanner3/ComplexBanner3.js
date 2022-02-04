@@ -24,7 +24,7 @@ const Container1 = ({ className }) => {
   return (
     <div className={className}>
       <StyledTemplateTitle text="Covid-19" />
-      <StyledTemplateHead text="Response to Covid-19 🦠" />
+      <StyledTemplateHead text="Covid-19 Response 🦠" />
       <StyledTextContainer text={['Due to Covid 19, the Timber Heritage Shops are closed to visitors until further notice. As for our events, all dates are subject to change. Please check back before attending any activity.']} />
       <StyledTextContainer text={[' All rides currently suspended. Please check back as the schedule is updated.']} />
     </div>
