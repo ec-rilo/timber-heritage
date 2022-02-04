@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import StyledTemplateHead from '../TemplateHead';
-import checkmarkImg from './checkmark.png';
+import checkmarkImg from './checkmark.webp';
 import { StyledBtn } from '../Buttons';
 import device from '../../../assets/devices';
 

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import volunteersImg from './volunteers.jpg';
+import volunteersImg from './volunteers.webp';
 
 const Img = ({ className }) => {
   return (
