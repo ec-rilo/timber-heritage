@@ -21,6 +21,7 @@ const StyledComplexBanner1 = styled(ComplexBanner1)`
   max-width: 1300px;
   margin: auto;
   overflow: hidden;
+  box-sizing: border-box;
 `;
 
 export default StyledComplexBanner1;
